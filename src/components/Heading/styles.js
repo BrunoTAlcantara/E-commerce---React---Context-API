@@ -50,7 +50,7 @@ export const Title = styled.h1`
     color: ${colorDark
       ? theme.colors.primaryColor
       : theme.colors.secondaryColor};
-    ${titleCase(uppercase)}
+    ${titleCase(uppercase)};
     ${titleSize[size](theme)};
     ${titleWeight[weight](theme)};
   `}
