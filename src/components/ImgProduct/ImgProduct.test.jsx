@@ -13,7 +13,7 @@ describe('<ImgProduct />', () => {
   it('should render img big ', () => {
     renderTheme(<ImgProduct img="#target" alt="img" size="big" />);
     const image = screen.getByAltText('img');
-    expect(image).toHaveStyle({ width: '56rem', height: '56rem' });
+    expect(image).toHaveStyle({ width: '55rem', height: '55rem' });
     expect(image).toHaveStyleRule('width', '30rem', {
       media: theme.media.lteMedium,
     });

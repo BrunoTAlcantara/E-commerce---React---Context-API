@@ -17,20 +17,25 @@ export const Menu = ({ links = [], logoData }) => {
   };
   return (
     <>
-      <Styled.Button
-        aria-label="Open/Close Menu"
-        onClick={() => handleOpenNav()}
-      >
-        {visible ? (
-          <CloseIcon aria-label="Close Menu" />
-        ) : (
-          <MenuIcon aria-label="Open Menu" />
-        )}
-      </Styled.Button>
+      <Styled.MenuMob>
+        <Styled.Button
+          aria-label="Open/Close Menu"
+          onClick={() => handleOpenNav()}
+        >
+          {visible ? (
+            <CloseIcon aria-label="Close Menu" />
+          ) : (
+            <MenuIcon aria-label="Open Menu" />
+          )}
+        </Styled.Button>
+
+        <LogoLink className="Logo" {...logoData} />
+        <IconsLink User="google.com" Cart="google.com.br" />
+      </Styled.MenuMob>
       <Styled.Container visible={visible}>
         <SectionContainer>
           <Styled.MenuContainer>
-            <LogoLink {...logoData} />
+            <LogoLink className="Logo" {...logoData} />
             <NavLinks links={links} />
             <IconsLink User="google.com" Cart="google.com.br" />
           </Styled.MenuContainer>

@@ -26,7 +26,7 @@ Heading.propTypes = {
   children: P.node.isRequired,
   colorDark: P.bool,
   as: P.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
-  size: P.oneOf(['small', 'medium', 'big', 'huge']),
+  size: P.oneOf(['small', 'medium', 'big', 'huge', 'eHuge']),
   weight: P.oneOf(['bold', 'regular', 'thin', 'eBold']),
   uppercase: P.bool,
 };

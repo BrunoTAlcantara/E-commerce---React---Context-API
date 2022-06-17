@@ -18,6 +18,11 @@ const titleSize = {
       font-size: ${theme.font.sizes.huge};
       ${mediaFont(theme)};
     `,
+  eHuge: (theme) =>
+    css`
+      font-size: ${theme.font.sizes.eHuge};
+      ${mediaFont(theme)};
+    `,
 };
 const titleWeight = {
   bold: (theme) =>

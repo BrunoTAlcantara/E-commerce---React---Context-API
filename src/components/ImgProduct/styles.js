@@ -14,8 +14,8 @@ const imgSize = {
     }
   `,
   big: (theme) => css`
-    width: 56rem;
-    height: 56rem;
+    width: 55rem;
+    height: 55rem;
     @media ${theme.media.lteMedium} {
       width: 30rem;
       height: 30rem;

@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
-.c4 {
+.c9 {
   max-width: 120rem;
   margin: 0 auto;
   padding: 2.4rem;
 }
 
-.c2 {
-  position: fixed;
+.c7 {
   z-index: 5;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
+  padding: 1rem;
   background: #E5E5E5;
   border-bottom: #ddd;
 }
 
-.c2 .c3 {
+.c7 .c8 {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.c5 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -37,19 +37,38 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background: #E5E5E5;
 }
 
 .c0 {
   display: none;
 }
 
-.c1 {
+.c2 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.c10 {
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
   width: 3rem;
   height: 3rem;
   cursor: pointer;
@@ -59,7 +78,7 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
   background: none;
 }
 
-.c7 {
+.c4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
@@ -67,18 +86,18 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
   font-weight: 800;
 }
 
-.c7 > img {
+.c4 > img {
   max-height: 2.5rem;
 }
 
-.c6 {
+.c3 {
   color: #252A2C;
   text-transform: none;
   font-size: 2.4rem;
   font-weight: 700;
 }
 
-.c9 {
+.c12 {
   display: block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -89,7 +108,7 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
   position: relative;
 }
 
-.c9::after {
+.c12::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -101,12 +120,12 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c9:hover::after {
+.c12:hover::after {
   left: 25%;
   width: 50%;
 }
 
-.c8 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -117,17 +136,18 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
 }
 
 @media (max-width:768px) {
-  .c2 {
+  .c7 {
     visibility: hidden;
     opacity: 0;
+    display: none;
     height: 100%;
   }
 
-  .c2 > .c3 {
+  .c7 > .c8 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 100vh;
+    height: 100%;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -136,35 +156,64 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    overflow-y: auto;
-  }
-}
-
-@media (max-width:768px) {
-  .c5 {
-    display: block;
-    text-align: left;
-    padding: 2.4rem 0;
-  }
-}
-
-@media (max-width:768px) {
-  .c0 {
-    z-index: 6;
-    display: block;
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    width: 3rem;
-    height: 3rem;
-    background: #E5E5E5;
-    color: #252A2C;
-    border: none;
   }
 }
 
 @media (max-width:768px) {
   .c10 {
+    display: block;
+    text-align: left;
+    padding: 2.4rem 0;
+  }
+
+  .c10 > h1 {
+    display: none;
+  }
+
+  .c10 > div {
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: none;
+    color: #252A2C;
+    border: none;
+    margin: 1rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    background: #E5E5E5;
+    border-bottom: #ddd;
+  }
+}
+
+@media (max-width:768px) {
+  .c6 {
     width: 2rem;
     height: 2rem;
     font-size: 1.6rem;
@@ -172,14 +221,14 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
 }
 
 @media (max-width:768px) {
-  .c7 {
+  .c4 {
     max-height: 2.5rem;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
 }
 
 @media (max-width:768px) {
-  .c8 {
+  .c11 {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -190,43 +239,105 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
 }
 
 <div>
-  <button
-    aria-label="Open/Close Menu"
+  <div
     class="c0"
   >
-    <svg
-      aria-hidden="true"
-      aria-label="Open Menu"
+    <button
+      aria-label="Open/Close Menu"
       class="c1"
-      fill="currentColor"
-      focusable="false"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M0 0h24v24H0V0z"
-        fill="none"
-      />
-      <path
-        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-      />
-    </svg>
-  </button>
+      <svg
+        aria-hidden="true"
+        aria-label="Open Menu"
+        class="c2"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </button>
+    <h1
+      class="c3"
+    >
+      <a
+        class="c4"
+        href="#target"
+      >
+        Logo
+      </a>
+    </h1>
+    <div
+      class="c5"
+    >
+      <button
+        aria-label="Button User"
+        class="c6"
+        href="google.com"
+      >
+        <svg
+          aria-hidden="true"
+          class="c2"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A7.95 7.95 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"
+          />
+        </svg>
+      </button>
+      <button
+        class="c6"
+      >
+        <svg
+          aria-hidden="true"
+          aria-label="Button Cart"
+          class="c2"
+          fill="currentColor"
+          focusable="false"
+          href="google.com.br"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49A.996.996 0 0020.01 4H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
   <div
-    class="c2"
+    class="c7"
   >
     <div
-      class="c3 c4"
+      class="c8 c9"
     >
       <h1>
         <div
-          class="c5"
+          class="c10"
         >
           <h1
-            class="c6"
+            class="c3"
           >
             <a
-              class="c7"
+              class="c4"
               href="#target"
             >
               Logo
@@ -234,31 +345,31 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
           </h1>
           <nav
             aria-label="Main Menu"
-            class="c8"
+            class="c11"
           >
             <a
-              class="c9"
+              class="c12"
               href="#target1"
               target="_self"
             >
               link1
             </a>
             <a
-              class="c9"
+              class="c12"
               href="#target2"
               target="_self"
             >
               link2
             </a>
             <a
-              class="c9"
+              class="c12"
               href="#target3"
               target="_self"
             >
               link3
             </a>
             <a
-              class="c9"
+              class="c12"
               href="#target4"
               target="_self"
             >
@@ -266,16 +377,16 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
             </a>
           </nav>
           <div
-            class=""
+            class="c5"
           >
             <button
               aria-label="Button User"
-              class="c10"
+              class="c6"
               href="google.com"
             >
               <svg
                 aria-hidden="true"
-                class="c1"
+                class="c2"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -291,12 +402,12 @@ exports[`<Menu /> should render Logo and Main menu Nav 1`] = `
               </svg>
             </button>
             <button
-              class="c10"
+              class="c6"
             >
               <svg
                 aria-hidden="true"
                 aria-label="Button Cart"
-                class="c1"
+                class="c2"
                 fill="currentColor"
                 focusable="false"
                 href="google.com.br"

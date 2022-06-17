@@ -12,7 +12,7 @@ export const Container = styled.a`
     }
     @media ${theme.media.lteMedium} {
       max-height: 2.5rem;
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.big};
     }
   `}
 `;
